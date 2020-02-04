@@ -12,14 +12,14 @@ end
 
 def take_a_number(customers, name)
   customers << name
-  puts "Welcome, #{name}. You are number #{deli.length} in line."
+  puts "Welcome, #{name}. You are number #{customers.length} in line."
 end
 
-def now_serving(deli)
+def now_serving(customers)
   if deli.empty?
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{deli.first}."
-    deli.shift
+    puts "Currently serving #{customers.first}."
+    customers.shift
   end
 end
