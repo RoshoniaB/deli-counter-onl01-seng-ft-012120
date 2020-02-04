@@ -3,7 +3,7 @@ def line(customers)
     puts "The line is currently empty."
   else
     current_line = "The line is currently:"
-    deli.each.with_index(1) do |person, i|
+    customers.each.with_index(1) do |person, i|
       current_line << " #{i}. #{person}"
     end
     puts current_line
@@ -16,7 +16,7 @@ def take_a_number(customers, name)
 end
 
 def now_serving(customers)
-  if deli.empty?
+  if customers.empty?
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{customers.first}."
