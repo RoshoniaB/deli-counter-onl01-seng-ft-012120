@@ -1,5 +1,5 @@
 def line(customers)
-  if deli.empty?
+  if customers.empty?
     puts "The line is currently empty."
   else
     current_line = "The line is currently:"
